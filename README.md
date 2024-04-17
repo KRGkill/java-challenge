@@ -25,7 +25,36 @@ Explanation:
 | 7 | 111 |
 | 3 | 11 |
 
-The decimal number whose binary representation contains the most ones is 15 (1111 in binary), so it goes first (index = 0). Next is 7, with three ones in its binary representation.
-Then there are 2 numbers whose binary representation contains the same number of ones, these decimals are 5 and 3, both with 2 ones. In this case, the number 3 goes first (closer to index = 0) because its decimal representation is smaller (3 < 5).
+The decimal number whose binary representation contains the most ones is 15 (1111 in binary), so it goes first (index = 0). 
+Next is 7, with three ones in its binary representation.
+Then there are 2 numbers whose binary representation contains the same number of ones, these decimals are 5 and 3, both with 2 ones. 
+In this case, the number 3 goes first (closer to index = 0) because its decimal representation is smaller (3 < 5).
 
 The final REST endpoint should return the result of the processed list of integers.
+
+
+# Run the App 
+
+### :minidisc: Compile
+- Compile the source code of the project
+```
+./mvnw compile
+```
+
+### :computer: Run application in local
+```
+./mvnw spring-boot:run
+```
+
+
+### :trophy: Tests the Endpoint with Swagger
+http://localhost:8080/swagger-intelygenz.html
+
+### :abacus: Run the H2 Console UI
+http://localhost:8080/h2-console
+- With this data:
+- Driver Class: org.h2.Driver
+- JDBC URL: jdbc:h2:mem:test
+- User Name: admin
+- Password:
+
